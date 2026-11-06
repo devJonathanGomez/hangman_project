@@ -1,0 +1,58 @@
+"""contiene la lógica del juego"""
+
+from utils import get_random_word
+
+class HangmanGame:
+    def __init__(self):
+        self.word = get_random_word()
+        self.guessed_letters = []
+        self.max_errors = 6
+        self.errors = 0
+
+    def display_progress(self):
+        """muestra el estado actual del juego"""
+        palabra = [letter if letter in self.guessed_letters else "_" for letter in self.word]
+        print("Palabra:", " ".join(palabra))
+        print("Errores:", self.errors)
+        return palabra
+
+    def process_guess(self, letter):
+        """procesa la letra ingresada por el jugador"""
+        if letter in self.guessed_letters:
+            return("Ya has ingresado esa letra.")
+        elif letter in self.word:
+            self.guessed_letters.append(letter)
+            return("Correcto!")
+        else:
+            self.errors += 1
+            return("Incorrecto!")
+
+    def is_won(self):
+        """verifica si el jugador ha ganado el juego"""
+        return "".join([letter if letter in self.guessed_letters else "_" for letter in self.word]) == self.word
+
+    def is_lost(self):
+        """verifica si el jugador ha perdido el juego"""
+        return self.errors >= self.max_errors
+
+
+if __name__ == "__main__":
+    print("Test parcial del juego")
+    game = HangmanGame()
+    while game.errors < game.max_errors:
+        if "".join(game.display_progress()) == game.word:
+            break
+        letter = input("Ingresa una letra: ").lower()
+        if letter in game.word:
+            game.guessed_letters.append(letter)
+        else:
+            game.errors += 1
+
+    game.display_progress()
+    palabra = "".join([letter if letter in game.guessed_letters else "_" for letter in game.word])
+    print("Palabra:", palabra)  #imprime la palabra completa si se ha ganado el juego
+    if game.errors == game.max_errors:
+        print("Perdiste! La palabra era:", game.word)  #imprime la palabra completa si se ha perdido el juego
+    else:
+        print("¡Ganaste! La palabra era:", game.word)  #imprime la palabra completa si se ha ganado el juego
+    print("Fin del juego.")  #imprime "Fin del juego." si se ha ganado el juego
