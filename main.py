@@ -17,7 +17,20 @@ def pedir_letra(intentadas):
             return letra
 
 
-def main():
+def pedir_jugar_de_nuevo():
+    """pregunta si quiere jugar otra vez hasta recibir si o no"""
+    while True:
+        respuesta = input("¿Querés jugar de nuevo? (si/no): ").strip().lower()
+        if respuesta == "si":
+            print()
+            return True
+        if respuesta == "no":
+            print()
+            return False
+        print("Respondé 'si' o 'no'.\n")
+
+
+def jugar_partida():
     juego = HangmanGame()
     intentadas = []  # todas las letras probadas, tanto aciertos como errores
 
@@ -34,7 +47,15 @@ def main():
         print("Ganaste! La palabra era:", juego.word)
     else:
         print("Perdiste! La palabra era:", juego.word)
-    print("\n"+"THE END")
+    print("\n")
+
+
+def main():
+    while True:
+        jugar_partida()
+        if not pedir_jugar_de_nuevo():
+            print("Hasta luego!")
+            break
 
 
 if __name__ == "__main__":

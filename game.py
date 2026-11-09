@@ -14,6 +14,7 @@ class HangmanGame:
         palabra = [letter if letter in self.guessed_letters else "_" for letter in self.word]
         print("Palabra:", " ".join(palabra))
         print("Errores:", self.errors)
+        print("Intentos restantes:", self.max_errors - self.errors)
         return palabra
 
     def process_guess(self, letter):
