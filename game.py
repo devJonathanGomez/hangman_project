@@ -1,10 +1,9 @@
 """contiene la lógica del juego"""
 
-from utils import get_random_word
 
 class HangmanGame:
-    def __init__(self):
-        self.word = get_random_word()
+    def __init__(self, word):
+        self.word = word
         self.guessed_letters = []
         self.max_errors = 6
         self.errors = 0

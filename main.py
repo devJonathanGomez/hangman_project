@@ -1,7 +1,7 @@
 """donde comienza el juego"""
 
 from game import HangmanGame
-
+from utils import get_random_word
 
 def pedir_letra(intentadas):
     """pide una letra hasta que el jugador ingrese una válida"""
@@ -31,7 +31,7 @@ def pedir_jugar_de_nuevo():
 
 
 def jugar_partida():
-    juego = HangmanGame()
+    juego = HangmanGame(get_random_word())
     intentadas = []  # todas las letras probadas, tanto aciertos como errores
 
     while not juego.is_won() and not juego.is_lost():
