@@ -4,3 +4,232 @@ prueba
 aleatorio
 dos palabras
 mother-in-law
+shell
+linux
+visual studio code
+git
+github
+smart memory
+obsidian
+ollama
+qwen
+mistral
+docker
+perplexity
+python
+javascript
+typescript
+html
+css
+react
+node.js
+django
+flask
+fastapi
+java
+kotlin
+rust
+golang
+c #
+c sharp
+java
+c++
+cplusplus
+ruby
+php
+bash
+zsh
+powershell
+terminal
+command line
+kernel
+filesystem
+root access
+sudo
+chmod
+chown
+grep
+awk
+sed
+find
+curl
+wget
+ssh
+scp
+rsync
+cron
+systemd
+apt
+pacman
+homebrew
+ubuntu
+debian
+fedora
+arch linux
+kali linux
+linux mint
+virtual machine
+container
+containerization
+kubernetes
+docker compose
+dockerfile
+image registry
+nginx
+apache
+postgresql
+mysql
+sqlite
+mongodb
+redis
+database
+query
+sql
+api
+rest api
+graphql
+websocket
+json
+yaml
+xml
+markdown
+regex
+algorithm
+recursion
+function
+variable
+array
+pointer
+memory leak
+garbage collector
+debugging
+breakpoint
+compiler
+interpreter
+runtime
+dependency
+package manager
+pip
+npm
+yarn
+pnpm
+virtual environment
+venv
+jupyter notebook
+pandas
+numpy
+tensorflow
+pytorch
+machine learning
+deep learning
+neural network
+artificial intelligence
+large language model
+generative ai
+prompt engineering
+embedding
+vector database
+rag
+llama
+llamaindex
+langchain
+hugging face
+transformer
+tokenizer
+inference
+fine tuning
+local model
+model weights
+gpu
+cuda
+ollama run
+open source
+free software
+version control
+repository
+commit
+branch
+merge
+pull request
+fork
+clone
+git stash
+git rebase
+git cherry pick
+gitignore
+github actions
+continuous integration
+continuous deployment
+devops
+ci cd
+pipeline
+automation
+workflow
+unit testing
+integration testing
+pytest
+unittest
+code review
+refactoring
+technical debt
+software architecture
+microservices
+serverless
+cloud computing
+virtualization
+networking
+firewall
+localhost
+port forwarding
+dns
+http
+https
+ssl certificate
+proxy
+load balancer
+latency
+bandwidth
+encryption
+authentication
+authorization
+two factor authentication
+environment variable
+secret key
+access token
+obsidian vault
+markdown editor
+knowledge graph
+second brain
+note taking
+perplexity ai
+smart search
+semantic search
+vector embeddings
+context window
+hallucination
+openai api
+anthropic
+chatbot
+agent
+mcp
+model context protocol
+gitlab
+bitbucket
+vscode extension
+integrated development environment
+intellisense
+syntax highlighting
+code snippet
+theme
+plugin
+dotfiles
+symbolic link
+hard link
+swap memory
+process
+thread
+daemon
+segmentation fault
+stack overflow
+race condition
+deadlock
