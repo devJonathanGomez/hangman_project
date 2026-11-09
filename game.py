@@ -11,7 +11,7 @@ class HangmanGame:
 
     def display_progress(self):
         """muestra el estado actual del juego"""
-        palabra = [letter if letter in self.guessed_letters else "_" for letter in self.word]
+        palabra = [letter if not letter.isalpha() or letter.lower() in self.guessed_letters else "_" for letter in self.word]
         print("Palabra:", " ".join(palabra))
         print("Errores:", self.errors)
         print("Intentos restantes:", self.max_errors - self.errors)
@@ -21,7 +21,7 @@ class HangmanGame:
         """procesa la letra ingresada por el jugador"""
         if letter in self.guessed_letters:
             return("Ya has ingresado esa letra.")
-        elif letter in self.word:
+        elif letter in self.word.lower():       #aseguramos que la letra ingresada sea minúscula para compararla con la palabra
             self.guessed_letters.append(letter)
             return("Correcto!")
         else:
@@ -30,7 +30,7 @@ class HangmanGame:
 
     def is_won(self):
         """verifica si el jugador ha ganado el juego"""
-        return "".join([letter if letter in self.guessed_letters else "_" for letter in self.word]) == self.word
+        return all(not letter.isalpha() or letter.lower() in self.guessed_letters for letter in self.word)
 
     def is_lost(self):
         """verifica si el jugador ha perdido el juego"""
