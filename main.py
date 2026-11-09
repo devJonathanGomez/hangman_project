@@ -20,14 +20,14 @@ def pedir_letra(intentadas):
 def pedir_jugar_de_nuevo():
     """pregunta si quiere jugar otra vez hasta recibir si o no"""
     while True:
-        respuesta = input("¿Querés jugar de nuevo? (si/no): ").strip().lower()
-        if respuesta == "si":
+        respuesta = input("¿Querés jugar de nuevo? (y/n): ").strip().lower()
+        if respuesta == "y":
             print()
             return True
-        if respuesta == "no":
+        if respuesta == "n":
             print()
             return False
-        print("Respondé 'si' o 'no'.\n")
+        print("Respondé 'y' o 'n'.\n")
 
 
 def jugar_partida():
