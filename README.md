@@ -42,6 +42,12 @@ python3 main.py
 | `utils.py` | Funciones auxiliares, como `get_random_word()`, que lee `wordlist.txt` y devuelve una palabra al azar. |
 | `wordlist.txt` | Lista de palabras posibles, una por línea. |
 
+## Flujo de una partida
+
+Ciclo de una partida que se repite hasta ganar o perder.
+
+![alt text](img/flujo_partida.png)
+
 ## Agregar palabras
 
 Editá `wordlist.txt` y escribí una palabra por línea. Las líneas vacías no están contempladas, así que evitá dejarlas al final del archivo.
